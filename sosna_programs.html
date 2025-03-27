@@ -4,14 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sosna Wellness Programs - Detailed Information</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --primary-green: #2E8B57;
+            --lime-green: #6AA121;
+            --background-green: #B2C248;
+            --text-color: #667C26;
+            --accent-brown: #8B4513;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: var(--background-green);
+            color: var(--text-color);
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' opacity='10'%3E%3Cdefs%3E%3Cpattern id='leaves' patternUnits='userSpaceOnUse' width='100' height='100'%3E%3Cpath d='M50 10 Q70 30, 50 50 Q30 70, 50 90 Q70 110, 50 130 Q30 150, 50 170' fill='none' stroke='%232E8B57' stroke-width='2' opacity='0.3'/%3E%3Cpath d='M20 30 Q40 50, 20 70 Q0 90, 20 110 Q40 130, 20 150' fill='none' stroke='%2390EE90' stroke-width='2' opacity='0.2'/%3E%3Cpath d='M80 50 Q100 70, 80 90 Q60 110, 80 130 Q100 150, 80 170' fill='none' stroke='%234CAF50' stroke-width='2' opacity='0.2'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23leaves)'/%3E%3C/svg%3E");
+            background-repeat: repeat;
+            z-index: -1;
+            pointer-events: none;
+        }
+        .content {
+            position: relative;
+            background-color: rgb(178, 194, 72);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgb(186, 161, 33);
+        }
+        h1, h2 {
+            color: var(--primary-green);
+            border-bottom: 2px solid var(--primary-green);
+            padding-bottom: 10px;
+        }
+        .program {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgb(186, 161, 33);
+            border: 1px solid var(--lime-green);
+        }
+        .contact-info {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+            border: 1px solid var(--light-green);
+        }
+        .logo {
+            max-width: 250px;
+            display: block;
+            margin: 20px auto;
+            opacity: 1.9;
+        }
+        ul {
+            border-left: 3px solid var(--primary-green);
+            padding-left: 20px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: var(--accent-brown);
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
     <div class="content">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj48aW1hZ2UgeD0iMCIgeT0iMCIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2Uvc3ZnK3htbDtiYXNlNjQsUEhOMlp5QjRiV3h1Y3owaWFIUjBjRG92TDNkM2R5NTNNeTV2Y21jdk1qQXdNQzl6ZG1jaUlIZHBaSFJvUFNJeE1ESTBjSGdpSUdobGFXZG9kRDBpTVRBeU5IQjRJaUI0Yld4dWN6cG9kSFJ3T2k4dmQzZDNMbmN6TG05eVp5OHlNREF3TDNOMlp5SStQSEpsWTNRZ2QybGtkR2c5SWpFd01qUnFlQ0lnYUdWcFoyaDBQU0l4TURJMGFuZ2lJSFpsY25OcGIyNDlJakVpSUdacGJHdzlJbTV2Ym1VaVBqeHpkbWNnZUcxc2JuTTZlRDBpYUhSMGNEb3ZMM2QzZHk1M015NXZjbWN2TVRBd01DOXpkbWNpSUhCeVpYTmxjblpsUTI5dmEybHVaejBpTVM0d0lpQjRQU0l3SWlCNVBTSXdJaUJtYVd4c1BTSnViMjVsSWo0OGMzWm5JSGh0Ykc1ek9uZzlJbWgwZEhBNkx5OTNkM2N1ZHpNdWIzSm5Mekl3TURBdmMzWm5JaUI0Yld4dWN6cDRQU0pvZEhSd09pOHZkM2QzTG5jekxtOXlaeThyZFRNd0wyeHBibVZoY2lJZ2VHMXNibk02WTJoaGNuTmxQU0pqYjJ4dmNpSWdkMmxrZEdnOUlqRXdNalJxZUNJZ2FHVnBaMmgwUFNJeE1ESTBhbmdpSUhacGMybGhiRDBpTVM0eE1DSStQR2x1WkdWeVBqeHpkbWNnZUcxc2JuTTZlRDBpYUhSMGNEb3ZMM2QzZHk1M015NXZjbWN2TVRBd01DOXpkbWNpSUdacGJHdzlJbTV2Ym1VaVBqeHlaV04wSUhkcFpIUm9QU0l4TURJMGFuZ2lJR2hsYVdkb2REMGlNVEF5TkdwNElpQjJhWE5wWVd4MVBTSXhMakV3SWlCbWFXeHNQU0p1YjI1bElqNDhjM1puSUhCeVpYTmxjblpsUTI5dmEybHVaejBpTVM0d0lpQjRQU0l3SWlCNVBTSXdJaUI0Yld4dWN6cG9kSFJ3T2k4dmQzZDNMbmN6TG05eVp5OHlNREF3TDNOMlp5SWdlRzFzYm5NNmVEMGlhSFIwY0RvdkwzZDNkeTUzTXk1dmNtY3ZNakF3TUM5emRtY2lJSGh0Ykc1ek9uZzlJbWgwZEhBNkx5OTNkM2N1ZHpNdWIzSm5MeTgxTXpSdmJHRnVaQzh3TGpVdGFHVmhjM1J5WldGdElpQjRiV3h1Y3pwamFHRnljejBpWTI5c2IzSWlJSGRwWkhSb1BTSXhNREkwYW5naUlHaGxhV2RvZEQwaU1UQXlOR3A0SWlCMmFYTnBZV3gxUFNJeExqRXdJaUJtYVd4c1BTSnViMjVsSWo0OGMzWm5JSEpsWTNRZ2QybGtkR2c5SWpFd01qUnFlQ0lnYUdWcFoyaDBQU0l4TURJMGFuZ2lJSFpwY25OMFlXeGxQU0l4TGpFd0lpQm1hV3hzUFNKdWIyNWxJajQ4YzNabklIQnlaWE5sY25aRGIyOXJhVzVuUFNJeExqQWlJSGc5SWpBaUlIazlJakFpSUhodGJHNXpPbWgwZEhBNkx5OTNkM2N1ZHpNdWIzSm5Mekl3TURBdmMzWm5JaUI0Yld4dWN6cDRQU0pvZEhSd09pOHZkM2QzTG5jekxtOXlaeThyZFRNd0wyeHBibVZoY2lJZ2VHMXNibk02WTJoaGNuTmxQU0pqYjJ4dmNpSWdkMmxrZEdnOUlqRXdNalJxZUNJZ2FHVnBaMmgwUFNJeE1ESTBhbmdpSUhacGMybGhiRDBpTVM0eE1DSStQR2x1WkdWeVBqeHpkbWNnZUcxc2JuTTZlRDBpYUhSMGNEb3ZMM2QzZHk1M015NXZjbWN2TVRBd01DOXpkbWNpSUdacGJHdzlJbTV2Ym1VaVBqeHlaV04wSUhkcFpIUm9QU0l4TURJMGFuZ2lJR2hsYVdkb2RD" class="logo" alt="Sosna Logo">
+
         <h1>Sosna Wellness Programs - Detailed Information</h1>
-        
+
+        <h2>Our Practitioners</h2>
+        <p>At Sosna, we are a team of dedicated and experienced holistic health practitioners, each bringing their own unique expertise to support your journey. With diverse backgrounds in energy healing, meditation, sound therapy, and more, we work together to provide you with personalized, multi-dimensional healing experiences. Our collective wisdom and compassionate approach ensure that you are supported every step of the way on your path to well-being.</p>
+
         <div class="program">
-            <h2>Sunzi - 21-Day Rehabilitation & Guiding Program</h2>
+            <h2>1. Sunzi - 21-Day Rehabilitation & Guiding Program</h2>
             <p>A comprehensive 21-day healing journey designed to restore balance and well-being. Structured in three levels:</p>
             <ul>
                 <li>Level 1: For those in a challenging or unhealthy state, just beginning their healing journey</li>
@@ -25,21 +104,70 @@
                 <li>Family Sessions: Engaging with loved ones to create a healing environment that supports lasting change</li>
             </ul>
         </div>
-        
+
         <div class="program">
-            <h2>Tatsu - Immersive Mind-Body Connection Program</h2>
+            <h2>2. Tatsu - Immersive Mind-Body Connection Program</h2>
             <p>Helps individuals strengthen the connection between their mind, body, and spirit through a variety of physical and emotional techniques. This program focuses on personal transformation by promoting mindfulness, emotional balance, and body awareness through tailored practices.</p>
+            <p>Program Structure:</p>
+            <ul>
+                <li>Mind-Body Integration: Techniques to integrate emotional balance and body healing</li>
+                <li>Practical Mindfulness: Practices that incorporate deep mindfulness into daily routines</li>
+                <li>Body Awareness: Physical techniques like gentle movement and breathwork</li>
+            </ul>
+            <p>Includes:</p>
+            <ul>
+                <li>One-on-One Therapy: Personal guidance to align your mind and body in harmony</li>
+                <li>Group Sessions: Engage with others to practice mindfulness and body awareness together</li>
+                <li>Family Sessions: Encourage mindfulness in the family dynamic, promoting collective healing</li>
+            </ul>
         </div>
 
         <div class="program">
-            <h2>Nagomi - Holistic Stress Reduction & Relaxation Program</h2>
-            <p>Designed to help individuals manage stress, cultivate relaxation, and restore inner peace.</p>
+            <h2>3. Nagomi - Holistic Stress Reduction & Relaxation Program</h2>
+            <p>Designed to help individuals manage stress, cultivate relaxation, and restore inner peace. Through a variety of holistic techniques, Nagomi supports emotional, mental, and physical well-being, promoting deep relaxation and resilience to stress in everyday life.</p>
+            <p>Program Structure:</p>
+            <ul>
+                <li>Stress Management Techniques: Learn to identify and release stress through deep relaxation methods</li>
+                <li>Mindfulness & Meditation: Practices that help quiet the mind and bring you into the present moment</li>
+                <li>Body Relaxation: Gentle movement, breathwork, and other methods to relieve tension and promote calmness</li>
+            </ul>
+            <p>Includes:</p>
+            <ul>
+                <li>One-on-One Therapy: Personalized relaxation techniques that work best for your needs</li>
+                <li>Group Sessions: Experience relaxation practices together, creating a peaceful and supportive environment</li>
+                <li>Family Sessions: Helping families integrate relaxation and stress reduction into their daily lives for collective healing</li>
+            </ul>
         </div>
 
         <div class="program">
-            <h2>Gezi - Personalized Life Journey & Habit-Tailoring Program</h2>
-            <p>A deeply personalized healing journey focused on habit formation and alignment with your life's goals.</p>
+            <h2>4. Gezi - Personalized Life Journey & Habit-Tailoring Program</h2>
+            <p>A deeply personalized healing journey focused on habit formation and alignment with your life's goals. This program provides individualized support and coaching to transform your habits, helping you cultivate a life that supports long-term health and happiness.</p>
+            <p>Program Structure:</p>
+            <ul>
+                <li>Personalized Life Assessment: Understand your life goals, challenges, and current habits</li>
+                <li>Habit-Tailoring: Practical tools and strategies for building sustainable habits</li>
+                <li>Ongoing Support: Continuous personalized coaching to ensure you maintain progress</li>
+            </ul>
+            <p>Includes:</p>
+            <ul>
+                <li>One-on-One Therapy: Tailored support to guide you through your personal transformation</li>
+                <li>Group Sessions: Shared experiences for mutual support and learning</li>
+                <li>Family Sessions: Helping families build healthy habits and navigate life changes together</li>
+            </ul>
         </div>
+
+        <div class="contact-info">
+            <h2>Contact & Location</h2>
+            <p>Address: Ta'alofa, Antananarivo, Madagascar 101</p>
+            <p>Phone: 032 72 064 14 / 033 24 949 80</p>
+            <p>Email: sosna.healthwellness@gmail.com</p>
+            <p>Website: sosna.life</p>
+        </div>
+
+        <footer>
+            <p>© 2024 Sosna Group. All rights reserved.</p>
+            <p>"You Hold the Key to Your Healing—We'll Help You Grow Into It."</p>
+        </footer>
     </div>
 </body>
 </html>
