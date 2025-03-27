@@ -1,0 +1,34 @@
+:root {
+    --primary-green: #2E8B57;
+    --light-green: #90EE90;
+    --text-color: #2C3E2C;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: url('https://source.unsplash.com/1600x900/?forest,water') no-repeat center center fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: var(--text-color);
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: var(--primary-green);
+    border-bottom: 2px solid var(--primary-green);
+    padding-bottom: 10px;
+}
+
+.program {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
